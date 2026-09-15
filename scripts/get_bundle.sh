@@ -64,7 +64,7 @@ gawk 'BEGIN{FS="\t"; OFS="\t"}{if ($2 ~/chr22/) {split($2,chr,":"); split($3,len
 	> reference/chr22.bed
 
 # add extra chr22 files from our GIT repo
-wget -P reference -np https://github.com/BITS-VIB/NGS-Variant-Analysis-training-2020/raw/master/data/addedrefs.tgz &&\
+wget -P reference -np https://github.com/splaisan/ngs-variant-analysis-training-2020/raw/main/data/addedrefs.tgz &&\
 tar -xzvf reference/addedrefs.tgz
 
 # touch all tbi files to prevent date-tag issues
